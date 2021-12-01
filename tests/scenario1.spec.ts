@@ -13,9 +13,9 @@ describe('test case for 001-002-003', () => {
         
         let ten_percent_discount = new PercentDiscount(10, 3000);
         
-        let lavender_heart_discount = new ItemDiscount("002", 2, 200);
+        let pizza_discount = new ItemDiscount("002", 2, 200);
         
-        let pricing_rules = [lavender_heart_discount, ten_percent_discount];
+        let pricing_rules = [pizza_discount, ten_percent_discount];
         
         let checkout = new Checkout(pricing_rules, { products: products });
         
