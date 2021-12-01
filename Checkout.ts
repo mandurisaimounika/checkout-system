@@ -4,7 +4,7 @@ import { PercentDiscount } from "./discounts/PercentageDiscount";
 import { Item } from "./Item";
 
 class Checkout {
-    _products: any;
+    _products: Array<Item>;
     _basket: Basket;
     _order: Map<any, any>;
     constructor(promotional_rules: Array<ItemDiscount | PercentDiscount> = null, { products = null } : {products: Array<Item>}) {
